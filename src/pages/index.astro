@@ -1,12 +1,33 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Hero from "../components/hero.astro";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/card.astro";
+import Cardswitch from "../components/cardSwitch.astro";
+import Menu from "../components/menu.astro";
+import Intro from "../components/intro.astro";
+import Review from "../components/review.astro";
+import Interlude from "../components/interlude.astro";
+import DuelCard from "../components/duelcard.astro";
+const { title, text } = Astro.props;
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<header>
+		<Menu />
+		<Hero />
+	</header>
+	<main>
+		<Intro title="Alt om netværksevents" text="Alt hvad du skal bruge til at føle dig klar til at deltage" />
+		<Card />
+		<Cardswitch />
+		<Review />
+		<Review />
+		<Interlude />
+		<Intro title="Udforsk din kreativitet" text="Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold" />
+		<DuelCard />
+	</main>
+	<footer></footer>
 </Layout>
-

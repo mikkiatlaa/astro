@@ -1,0 +1,43 @@
+---
+import Button from "../components/button.astro";
+---
+
+<section class="card">
+    <div class="card-content">
+        <h3>Good to know hvis det er dit første netværksevent.</h3>
+        <p>Alt det du skal vide før du deltager i et netværksevent.</p>
+        <Button text="Se her" />
+    </div>
+    <img src="public/kreative.png" alt="Card Image" />
+</section>
+
+<style>
+    .card {
+        border: 1px solid #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .button {
+        background-color: #0070f3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #005bb5;
+    }
+</style>

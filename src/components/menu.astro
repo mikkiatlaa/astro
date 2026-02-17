@@ -1,0 +1,22 @@
+---
+import Button from "../components/button.astro";
+---
+
+<section class="menu">
+    <a href="../pages/index.astro"><img src="../rundt-logo.png" alt="" /></a>
+    <Button text="Kontakt" />
+</section>
+
+<style>
+    .menu {
+        background-color: #a8daff;
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu h3 {
+        margin-top: 0;
+    }
+</style>
