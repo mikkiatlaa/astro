@@ -1,12 +1,41 @@
-<section>
-    <article>
-        <img src="" alt="" />
-        <h3>Duel Title</h3>
-        <p>Duel description goes here.</p>
-    </article>
-    <article>
-        <img src="" alt="" />
-        <h3>Duel Title</h3>
-        <p>Duel description goes here.</p>
-    </article>
+---
+import Button from "../components/button.astro";
+---
+
+<section class="card">
+    <img src="/findDinVen.png" alt="Card Image" />
+    <div>
+        <h3>Find din “networking” ven</h3>
+        <p>En hurtig info test, hvor du kan finde den perfekte til dit problem</p>
+        <Button text="Find din ven" />
+    </div>
 </section>
+
+<style>
+    .card {
+        padding: 16px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .button {
+        background-color: #0070f3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #005bb5;
+    }
+</style>
