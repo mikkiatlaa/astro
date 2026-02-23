@@ -1,16 +1,17 @@
 ---
-
+const { text } = Astro.props;
 ---
 
 <section class="review">
-    <h3>Review Title</h3>
-    <p>Review content goes here.</p>
+    <h2>{text}</h2>
 </section>
 
 <style>
     .review {
+        display: flex;
+        justify-content: center;
         padding: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
     }
 
     .review h3 {

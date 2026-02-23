@@ -11,11 +11,20 @@ import Button from "../components/button.astro";
 
 <style>
     .interlude {
-        display: grid;
-        place-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
         height: 70vh;
         background-color: #a8daff;
+        color: #fff;
         z-index: -1;
         margin: 0;
+        background-image: url("../ansigt.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    h2 {
+        color: #fff;
     }
 </style>

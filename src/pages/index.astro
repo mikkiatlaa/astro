@@ -9,6 +9,7 @@ import Intro from "../components/intro.astro";
 import Review from "../components/review.astro";
 import Interlude from "../components/interlude.astro";
 import DuelCard from "../components/duelcard.astro";
+import Footer from "../components/footer.astro";
 const { title, text } = Astro.props;
 import "@fontsource-variable/montserrat";
 
@@ -25,11 +26,13 @@ import "@fontsource-variable/montserrat";
 		<Intro title="Alt om netværksevents" text="Alt hvad du skal bruge til at føle dig klar til at deltage" />
 		<Card />
 		<Cardswitch />
-		<Review />
-		<Review />
+		<Review text="“Fedt at møde andre der bare var ligesom mig”" />
+		<Review text="“Det var en øjenåbner at høre andres historier”" />
 		<Interlude />
 		<Intro title="Udforsk din kreativitet" text="Hold øje med sjove quizzer, gode how to’s og andet kreativt indhold" />
 		<DuelCard />
 	</main>
-	<footer></footer>
+	<footer>
+		<Footer />
+	</footer>
 </Layout>

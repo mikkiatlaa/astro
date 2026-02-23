@@ -9,6 +9,53 @@ header {
     background-color: #A8DAFF;
 }
 
-h1 h2 h3 h4 {
-  font-family: 'Montserrat Variable', sans-serif;
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('public/fonts/montserrat.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #25547C;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #25547C;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #25547C;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #25547C;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+img {
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px #A8DAFF;
 }
